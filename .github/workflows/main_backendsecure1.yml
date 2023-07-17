@@ -69,9 +69,3 @@ jobs:
       - name: logout
         run: |
           az logout
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'backendSecure1'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9C8A350BB1E14DA4974915CB70F74C52 }}
-          package: .
